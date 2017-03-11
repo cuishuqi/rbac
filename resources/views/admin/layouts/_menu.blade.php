@@ -54,9 +54,9 @@
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="admin-role.html" title="角色管理">角色管理</a></li>
+					<li><a href="{{route('admin.role.index')}}" title="角色管理">角色管理</a></li>
 					<li><a href="{{route('admin.permission.index')}}" title="权限管理">权限管理</a></li>
-					<li><a href="admin-list.html" title="管理员列表">管理员列表</a></li>
+					<li><a href="{{route('admin.role.index')}}" title="管理员列表">管理员列表</a></li>
 				</ul>
 			</dd>
 		</dl>

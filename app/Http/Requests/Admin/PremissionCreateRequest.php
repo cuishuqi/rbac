@@ -30,4 +30,5 @@ class PremissionCreateRequest extends FormRequest
             'cid'=>'required|int'
         ];
     }
+
 }

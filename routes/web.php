@@ -27,6 +27,11 @@ Route::group(['namespace' =>'Admin','prefix'=>'admin'],function(){
         Route::get('permission/{pid}/edit',['as'=>'admin.permission.edit','uses'=>'PermissionController@edit']);
         Route::get('permission/delete/{pid}',['as'=>'admin.permission.delete','uses'=>'PermissionController@delete']);
         Route::get('role/index',['as'=>'admin.role.index','uses'=>'RoleController@index']);
+        Route::get('role/create',['as'=>'admin.role.create','uses'=>'RoleController@create']);
+        Route::any('role/store',['as'=>'admin.role.store','uses'=>'RoleController@store']);
+        Route::any('role/edit',['as'=>'admin.role.edit','uses'=>'RoleController@edit']);
+        Route::any('role/delete',['as'=>'admin.role.store','uses'=>'RoleController@delete']);
+
     }
 );
 

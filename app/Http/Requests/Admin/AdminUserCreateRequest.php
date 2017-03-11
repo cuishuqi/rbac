@@ -4,7 +4,7 @@ namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PremissionUpdateRequest extends FormRequest
+class AdminUserCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class PremissionUpdateRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -23,11 +23,14 @@ class PremissionUpdateRequest extends FormRequest
      */
     public function rules()
     {
-            return [
-              'name' => 'required|unique:admin_permissions,name,'.$this->get('id').'|max:255',
-              'label'=>'unique:admin_permissions,label,'.$this->get('id').'|max:255',
-              'cid' => 'int',
-            ];
+        return [
+            //
+        ];
     }
+    public function messages()
+    {
+        return [
 
+        ];
+    }
 }
